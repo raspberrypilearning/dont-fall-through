@@ -1,28 +1,17 @@
-## Step title
+## Add the players
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Add an introductory sentence. What will learners achieve by the end of this step?
+In this step you will 
 </div>
 <div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
+![Step 3 output.](images/step-3-output){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-Another step of tasks to complete.
+
 
 --- /task ---
 
---- task ---
-
-Step content... 
-Can use:
-**Test:**
-**Choose:**
-**Tip:**
-
---- /task ---
-
---- save ---
