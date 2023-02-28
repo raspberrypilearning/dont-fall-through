@@ -4,9 +4,9 @@ Create a two-player game where each player must try to find the safe route acros
 
 You will:
 
-+ Control two players with different keys on the keyboard
-+ Control the gravity of GameObjects with code
-+ Change the material of a GameObject using code
++ Control two players with different keys on the keyboard.
++ Control the gravity of GameObjects with code.
++ Change the material of a GameObject using code.
 
 --- no-print ---
 
