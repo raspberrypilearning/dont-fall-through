@@ -167,7 +167,7 @@ using UnityEngine;
 public class TileController : MonoBehaviour
 {
     public Material startColour;
-    private Renderer rend;
+    Renderer rend;
     // Start is called before the first frame update
     void Start()
     {

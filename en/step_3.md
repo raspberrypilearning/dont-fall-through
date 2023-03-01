@@ -157,7 +157,7 @@ Exit Play mode.
 
 --- task ---
 
-Select the Player2 GameObject and find the 'PlayerController' GameObject in the inspector. 
+Select the Player2 GameObject and find the 'PlayerController' script in the inspector. 
 
 Change the Player2 keys to use the arrow keys: `up`, `left`, `down`, and `right`. 
 
@@ -188,7 +188,6 @@ In the 'Project' window, navigate to 'Assets -> Particle Systems'.
 Drag the 'Fireworks' particle system onto the 'End Platform' GameObject in the Hierarchy window. 
 
 ![A screenshot of the hierarchy window showing Fireworks as a child object of the End platform and the Scene view showing firework effects along the end platform.](images/fireworks-hierarchy.png)
-
 
 --- /task ---
 
@@ -242,7 +241,6 @@ public class FinishEffects : MonoBehaviour
 {
    AudioSource audioSource;
    ParticleSystem completeParticleSystem;
-
 
    void Start()
    {
