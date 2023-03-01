@@ -234,7 +234,7 @@ Duplicate the 'Start Platform' and position it at the end of the Floor furthest 
 
 Add a different material to the end platform. We used 'GlossOrange'.
 
-![The tiled floor with a blue start platform at the front.](images/end-platform.png)
+![The tiled floor with an orange platform at the end.](images/end-platform.png)
 
 --- /task ---
 
@@ -244,37 +244,15 @@ Rename the GameObject to `End Platform`.
 
 --- /task ---
 
---- task ---
-
-**Choose:** a material from the 'Materials' folder and drag it onto the start platform in the Scene view.
-
---- /task ---
-
---- task ---
-
-Add a cube for the start platform and position it at the end of the Floor closest to the Main Camera.  
-
-We used: Position `0`,`0`,`-10` and Scale `18`,`1`,`2`.
-
-![The Inspector for the start cube with Position 0,0,-10 and Scale 18,1,2.](images/start-settings.png)
-
---- /task ---
-
---- task ---
-
-**Choose:** a material from the 'Materials' folder and drag it onto the start platform in the Scene view.
-
---- /task ---
-
 ### Add a coloured skybox
 
 --- task ---
 
-Create a new material then go to the 'Inspector' window.
+Create a new material called 'Skybox' in the 'Materials' folder, then go to the 'Inspector' window.
 
 Change the 'Shader' to 'Skybox -> 6 Sided'.
 
-**Choose:** Change the 'Tint Color' to a colour of your choice. 
+**Choose:** Change the 'Tint Color' to a colour of your choice. Our example uses a dark blue colour.
 
 Go to the Project window and drag the new skybox material onto the background of your scene. 
 
