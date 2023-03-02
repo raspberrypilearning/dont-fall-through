@@ -103,16 +103,25 @@ In the Hierarchy window, select **all** the Floor cubes.
 
 Drag your 'safe' material to the 'Safe Colour' variable. 
 
---- /task ---
-
---- task ---
-
-
+![A screenshot showing the 'Safe Colour' applied to the 'Safe Colour' variable.](images/safe-colour-applied.png)
 
 --- /task ---
 
 --- task ---
 
+With **all** of the floor tiles selected. Add a new BoxCollider component and **check** the 'Is Trigger' box.
 
+--- /task ---
+
+--- task ---
+
+**Test** your game by pressing play. You should be able to roll each player's ball across the tiles to reveal the safe path underneath. 
+
+Exit play mode.
+
+<video width="640" height="360" controls preload="none" poster="images/safe-path-complete.png">
+<source src="images/safe-path.mp4" type="video/mp4">
+Your browser does not support WebM video, try FireFox or Chrome
+</video>
 
 --- /task ---
