@@ -1,0 +1,28 @@
+---
+title: Don't fall through
+hero_image: images/banner.png
+description: Create a two-player game where the player must find the safe route to the end.
+version: 4
+listed: false
+copyedit: false
+last_tested: "2021-03-26"
+steps:
+  - title: You will make
+  - title: Create the level
+  - title: Add the players
+    completion:
+      - engaged
+  - title: Create a safe route
+  - title: Fall through
+    completion:
+      - internal
+  - title: Quick quiz
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+  - title: Upgrade your project
+  - title: What next?
+    completion:
+      - external
