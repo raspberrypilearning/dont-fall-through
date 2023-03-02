@@ -1,13 +1,12 @@
 ## Upgrade your project
 
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Summary or upgrade project task
-</div>
-<div>
-![](images/image.png){:width="300px"}
-</div>
-</div>
+Add more scenes to create more levels for your game. 
+
+You could:
+Add a third or fourth player with different keys.
+Change the dimensions of the tiled floor.
+Choose different materials and particle effect settings.
+Add sound effects for rolling over good and bad tiles. 
 
 --- collapse ---
 
