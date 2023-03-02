@@ -1,9 +1,12 @@
 ## Upgrade your project
 
-Add more scenes to create more levels for your game. 
+
 
 You could:
 Add a third or fourth player with different keys.
+Add more scenes to create more levels for your game. 
+
+
 Change the dimensions of the tiled floor.
 Choose different materials and particle effect settings.
 Add sound effects for rolling over good and bad tiles. 
