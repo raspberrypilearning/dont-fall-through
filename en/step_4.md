@@ -120,7 +120,7 @@ With **all** of the floor tiles selected. Add a new BoxCollider component and **
 
 Change the BoxCollider Size to X = `0.02`, Y = `0.01` and Z = `0.04` so that the ball is fully on top of the tile before the material is revealed. 
 
-![A screenshot of the scene view showing the 'Is Trigger' BoxCollider boundaries do not cover the full tile.](images/safe-colour-applied.png) 
+![A screenshot of the scene view showing the 'Is Trigger' BoxCollider boundaries do not cover the full tile.](images/box-collider.png) 
 
 --- /task ---
 

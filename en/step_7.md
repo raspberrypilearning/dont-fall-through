@@ -1,15 +1,15 @@
 ## Upgrade your project
 
-
+Change the style of your game or add more. 
 
 You could:
 + Add a third or fourth player with different keys.
-+ Add more scenes to create more levels for your game. 
++ Use `Save As` to create a copy of your scene and create another level.
++ Choose different materials and particle effect settings.
++ Add sound effects for rolling over good and bad tiles. 
++ Try setting the gravity and mass of the tiles to different values. 
 
-
-Change the dimensions of the tiled floor.
-Choose different materials and particle effect settings.
-Add sound effects for rolling over good and bad tiles. 
+<mark>Update the completed project</mark>
 
 --- collapse ---
 

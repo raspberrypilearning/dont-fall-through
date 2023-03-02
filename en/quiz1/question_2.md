@@ -48,7 +48,7 @@ line_highlights:
 
   --- feedback ---
 
-Not quite. 
+Not quite. You do need to set `useGravity` to `false` but there's something else you need to do. 
 
   --- /feedback ---
 
@@ -63,12 +63,14 @@ line_number_start: 1
 line_highlights: 
 ---
 
-  this.GetComponent<Rigidbody>().useGravity = true;
-  this.GetComponent<Rigidbody>().isKinematic = false;
+  this.GetComponent<Rigidbody>().useGravity = false;
+  this.GetComponent<Rigidbody>().isKinematic = true;
 
 --- /code ---
 
   --- feedback ---
+
+  That's not correct. `isKinematic` is `true` means that the movement of the GameObject is controlled completely with code. 
 
   --- /feedback ---
 
@@ -90,6 +92,8 @@ line_highlights:
 
   --- feedback ---
 
+  That's not correct. `isKinematic` is `true` means that the movement of the GameObject is controlled completely with code. 
+
   --- /feedback ---
 
 - (x) 
@@ -109,6 +113,8 @@ line_highlights:
 --- /code ---
 
   --- feedback ---
+
+That's correct. You need to set `isKinematic` to `false` **and** `useGravity` to `true` to be able to control movement with physics instead of code. 
 
   --- /feedback ---
 
