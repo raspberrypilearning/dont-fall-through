@@ -5,7 +5,10 @@
 In this step you will create a safe route from the start to the end platform. Rolling over a safe tile will turn it green. 
 </div>
 <div>
-![Step 4 output.](images/step-4-output){:width="300px"}
+<video width="640" height="360" controls preload="none" poster="images/safe-path-complete.png">
+<source src="images/safe-path.mp4" type="video/mp4">
+Your browser does not support WebM video, try FireFox or Chrome
+</video>
 </div>
 </div>
 
@@ -17,7 +20,7 @@ In this step you will create a safe route from the start to the end platform. Ro
 
 **Design** a safe path. Drag the safe material to the safe tiles to see your route.
 
-**Tip:** the safe path should make a route from the start platform to the end platform. The safe tiles need to form a connected path but you can have some decoy tiles.  
+**Tip:** the safe path should make a route from the start platform to the end platform. The safe tiles need to form a connected path but you can have some safe tiles that are not on the correct path.  
 
 ![A screenshot showing a suggested safe path for your project. A green path leads the player from the start platform to the end platform.](images/safe-path.png)
 
@@ -39,9 +42,9 @@ In the Inspector, click on the tag dropdown and choose ‘Add Tag…’. Add a n
 
 --- task ---
 
-Go to the Scene view and select all the 'Safe' tiles. 
+Go to the **Scene view** and select all the 'Safe' tiles. 
 
-**Tip:** Hold down the <kbd>ctrl<kbd> / <kbd>cmd<kbd> key then click on the safe tiles in turn to highlight all the tiles in the path. 
+**Tip:** Hold down the <kbd>ctrl<kbd> / <kbd>cmd<kbd> key then click on the safe tiles in turn in the Scene view to highlight all the tiles in the path. 
 
 Selected tiles are shown with an orange border:
 
@@ -52,6 +55,8 @@ Selected tiles are shown with an orange border:
 --- task ---
 
 Apply the 'Safe' tag to the safe tiles.
+
+**Tip:** GameObjects can only have one tag so this will remove the 'Tile' tag from the safe tiles. 
 
 --- /task ---
 
@@ -72,9 +77,9 @@ using System.Collections.Generic;
 using UnityEngine;
 public class TileController : MonoBehaviour
 {
-    private Renderer rend;
     public Material startColour;
     public Material safeColour;
+    Renderer rend;
 
     // Start is called before the first frame update
     void Start()
@@ -83,7 +88,7 @@ public class TileController : MonoBehaviour
         rend.sharedMaterial = startColour;
     }
 
-  void OnTriggerEnter(Collider other){
+    void OnTriggerEnter(Collider other){
        if (gameObject.tag == "Safe"){
            rend.sharedMaterial = safeColour;
        	}
@@ -101,7 +106,9 @@ Save the script and return to the Unity Editor.
 
 In the Hierarchy window, select **all** the Floor cubes. 
 
-Drag your 'safe' material to the 'Safe Colour' variable. 
+Navigate to the materials folder.
+
+Drag your 'safe' material to the 'Safe Colour' variable in the Inspector. 
 
 ![A screenshot showing the 'Safe Colour' applied to the 'Safe Colour' variable.](images/safe-colour-applied.png)
 
@@ -110,6 +117,10 @@ Drag your 'safe' material to the 'Safe Colour' variable.
 --- task ---
 
 With **all** of the floor tiles selected. Add a new BoxCollider component and **check** the 'Is Trigger' box.
+
+Change the BoxCollider Size to X = `0.02`, Y = `0.01` and Z = `0.04` so that the ball is fully on top of the tile before the material is revealed. 
+
+![A screenshot of the scene view showing the 'Is Trigger' BoxCollider boundaries do not cover the full tile.](images/safe-colour-applied.png) 
 
 --- /task ---
 

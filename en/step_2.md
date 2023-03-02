@@ -174,8 +174,6 @@ public class TileController : MonoBehaviour
         rend = GetComponent<Renderer>();
         rend.sharedMaterial = startColour;
     }
-
-
 }
 
 --- /code ---

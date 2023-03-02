@@ -48,7 +48,7 @@ line_highlights:
 
   --- feedback ---
 
-Not quite. You do need to 
+Not quite. 
 
   --- /feedback ---
 

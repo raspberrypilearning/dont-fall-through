@@ -3,8 +3,8 @@
 
 
 You could:
-Add a third or fourth player with different keys.
-Add more scenes to create more levels for your game. 
++ Add a third or fourth player with different keys.
++ Add more scenes to create more levels for your game. 
 
 
 Change the dimensions of the tiled floor.
