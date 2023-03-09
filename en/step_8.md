@@ -2,7 +2,7 @@
 
 <mark>Update when the next project is available.</mark>
 
-If you are following the [More Unity](https://projects.raspberrypi.org/en/raspberrypi/more-unity) path, you can move on to the [x](https://projects.raspberrypi.org/en/projects/xh) project. In this project, you will make a tiltable disco dance floor with tiles that light-up and play musical notes when a ball rolls over them.
+If you are following the [More Unity](https://projects.raspberrypi.org/en/raspberrypi/more-unity) path, you can move on to the [x](https://projects.raspberrypi.org/en/projects/x) project. In this project, you will x.
 
 ![x.](images/x.png)
 
