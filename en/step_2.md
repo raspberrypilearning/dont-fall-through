@@ -13,48 +13,53 @@ In this step you will create the level for your game.
 
 --- task ---
 
-Launch the Unity Hub and click **Projects** then select **New project**:
+Launch the Unity Hub and open the project you created for [Disco dance floor](https://projects.raspberrypi.org/en/projects/disco-dance-floor/0){:target='_blank'}.
+
+--- collapse ---
+
+---
+title: I haven't got my Disco dance floor project
+---
+
+If you are unable to open your project, launch the Unity Hub and click **Projects** then select **New project**:
+
+![A screenshot of the black bar at the top of the Unity Hub with the 'New Project' button highlighted in red.](images/new-project.png)
 
 From the list choose **All templates** then select **3D Core**:
 
+![A screenshot of the left pane in the Unity Hub. The 3D core option is highlighted in red.](images/3D-core.png)
+
 Edit the project settings to give your project a sensible name and save it to a sensible location. Then click **Create project**:
+
+![A screenshot of the right pane in the Unity Hub. The filename and the 'Create Project' sections are highlighted in red.](images/create-project.png)
 
 Your new project will open in the Unity Editor. It may take some time to load.
 
---- /task ---
+Download and unzip the [More Unity starter package](https://rpf.io/p/en/rainbow-run-go){:target="_blank"} to your computer. 
 
---- task ---
+**Tip:** Choose a sensible location such as your Documents folder.
 
-The Unity starter package you downloaded for this More Unity path contains a number of **Assets** for you to use in your project.
+The Unity starter package for this More Unity path contains a number of **Assets** for you to use in your project.
 
 To import them into your new project, click on the **Assets menu** and select **Import package > Custom Package…** then navigate to the downloaded Unity starter package.
 
---- collapse ---
----
-title: I haven't downloaded a Unity starter package
----
-
-Download and unzip the [More Unity starter package](https://rpf.io/p/en/rainbow-run-go){:target="_blank"} to your computer. 
-
-**Tip:** Choose a sensible location such as your Documents folder. 
-
 --- /collapse ---
-
-[[[unity-importing-a-package]]]
 
 --- /task ---
 
 --- task ---
 
-Right-click on **SampleScene** in the Hierarchy and choose **Save Scene As**: 
+In the **Project** panel right-click and select **Create --> Scene**.
 
-![The scene icon in the Hierarchy window with the right-click menu expanded.](images/right-click-scene.png)
+![The right-click menu with Create and Scene highlighted](images/create-scene.png)
 
 In the pop-up window, name your Scene `Don't fall through`:
 
 A new file will appear in the Assets folder in the Project window:
 
 ![Project window with Don't fall through scene in the Assets folder.](images/dont-fall-through-scene.png)
+
+Drag the new Scene into the 'Scenes' folder to organise your files.
 
 --- /task ---
 
@@ -64,7 +69,7 @@ A new file will appear in the Assets folder in the Project window:
 
 In the Project window, click on **Parts**.
 
-**Drag** the 'Floor' object to the Scene view: 
+**Drag** the '8x8Floor' object to the Scene view: 
 
 Your scene should look like this:
 
@@ -74,9 +79,9 @@ Your scene should look like this:
 
 --- task ---
 
-Go to the Inspector window. Click on the Transform component menu and select 'Reset'. This will centre your floor in the world:
+In the Inspector window, change the Transform properties of the '8x8Floor' GameObject: Position X=`0`, Y=`0`, Z=`0`.
 
-![The Inspector window with th Transform component drop down menu expanded and top menu item 'Reset' highlighted.](images/transform-reset.png)
+![The Inspector window with the Transform component of the 8x8Floor GameObject, with position values all set to 0](images/floor-position.png)
 
 --- /task ---
 
@@ -84,7 +89,7 @@ Go to the Inspector window. Click on the Transform component menu and select 'Re
 
 --- task ---
 
-Click on the **View tool** in the Scene view (the hand icon) and drag the view until you are happy. Right-click on the Main Camera object in the Hierarchy window and select 'Align With View':
+Click on the **View tool** in the Scene view (the hand icon) and drag the view to one side of the floor looking down towards it. When you are happy, right-click on the Main Camera object in the Hierarchy window and select 'Align With View':
 
 [[[unity-scene-navigation]]]
 
@@ -138,6 +143,16 @@ With all the Floor cubes selected:
 
 ![Box Collider and Rigidbody components in the Inspector. Rigidbody has gravity check and kinematic unchecked.](images/cube-components.png)
 
+--- collapse ---
+
+---
+title: What does isKinematic mean?
+---
+
+When you set a Rigidbody to be **Kinematic** it means that the object will be completely controlled through code. This means that the physics of the world from interactions like collisions and gravity will not effect the object. 
+
+--- /collapse ---
+
 --- /task ---
 
 ### Set the material with a script
@@ -168,6 +183,7 @@ public class TileController : MonoBehaviour
 {
     public Material startColour;
     Renderer rend;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -180,6 +196,8 @@ public class TileController : MonoBehaviour
 
 --- /task ---
 
+--- task ---
+
 **Choose:** a start material for the tiles from the 'Materials' folder. 
 
 With all the Floor cubes selected, drag your chosen material to the 'Start Colour' variable of the 'TileController' script in the Inspector. 
@@ -187,6 +205,8 @@ With all the Floor cubes selected, drag your chosen material to the 'Start Colou
 We chose the 'GlossYellow' material:
 
 ![The TileController script in the Inspector with the start colour set to GlossYellow.](images/tile-start-colour.png)
+
+--- /task ---
 
 --- task ---
 

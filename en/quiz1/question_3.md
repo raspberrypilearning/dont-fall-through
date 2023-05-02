@@ -19,13 +19,15 @@ line_highlights:
 ---
 
   void OnTriggerEnter(Collider other){
-       if (gameObject.tag == "Safe"){
-           rend.sharedMaterial = safeColour;
-       }
-       
-        else if (gameObject.tag == "Tile"){
-                rend.sharedMaterial = unsafeColour;
-        }
+    if (gameObject.tag == "Safe")
+    {
+      rend.sharedMaterial = safeColour;
+    }
+    else if (gameObject.tag == "Tile")
+    {
+      rend.sharedMaterial = unsafeColour;
+    }
+  }
 
 --- /code ---
 

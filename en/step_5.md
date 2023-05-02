@@ -22,12 +22,13 @@ language: cs
 filename: TileController.cs
 line_numbers: true
 line_number_start: 1
-line_highlights: 8, 23, 24, 25
+line_highlights: 9, 22-25
 ---
 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class TileController : MonoBehaviour
 {  
     public Material startColour;
@@ -43,11 +44,13 @@ public class TileController : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
-       if (gameObject.tag == "Safe"){
-           rend.sharedMaterial = safeColour;
-       }
-        else if (gameObject.tag == "Tile"){
-                rend.sharedMaterial = unsafeColour;
+        if (gameObject.tag == "Safe")
+        {
+            rend.sharedMaterial = safeColour;
+        } 
+        else if (gameObject.tag == "Tile")
+        {
+            rend.sharedMaterial = unsafeColour;
         }
     }
 }
@@ -89,12 +92,13 @@ language: cs
 filename: TileController.cs
 line_numbers: true
 line_number_start: 1
-line_highlights: 
+line_highlights: 17, 18, 29, 30
 ---
 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class TileController : MonoBehaviour
 {  
     public Material startColour;
@@ -107,18 +111,21 @@ public class TileController : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
         rend.sharedMaterial = startColour;
-        this.GetComponent<Rigidbody>().useGravity = false;
-        this.GetComponent<Rigidbody>().isKinematic = true;
+        GetComponent<Rigidbody>().useGravity = false;
+        GetComponent<Rigidbody>().isKinematic = true;
     }
 
     void OnTriggerEnter(Collider other){
-       if (gameObject.tag == "Safe"){
-           rend.sharedMaterial = safeColour;
-       }
-        else if (gameObject.tag == "Tile"){
-                rend.sharedMaterial = unsafeColour;
-                this.GetComponent<Rigidbody>().useGravity = true;
-                this.GetComponent<Rigidbody>().isKinematic = false;
+        if (gameObject.tag == "Safe")
+        {
+            rend.sharedMaterial = safeColour;
+        }
+        else if (gameObject.tag == "Tile")
+        {
+            rend.sharedMaterial = unsafeColour;
+            GetComponent<Rigidbody>().useGravity = true;
+            GetComponent<Rigidbody>().isKinematic = false;
+        }
     }
 }
 
