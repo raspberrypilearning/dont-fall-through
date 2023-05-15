@@ -69,7 +69,7 @@ In the Hierarchy window, select **all** the Floor cubes.
 
 **Choose:** An unsafe material. Drag your 'unsafe' material to the 'Unsafe Colour' variable in the Inspector.  
 
-![A screenshot showing the 'Unsafe Colour' applied to the 'UnSafe Colour' variable.](images/unsafe-colour-applied.png)
+![A screenshot showing the 'Unsafe Colour' applied to the 'Unsafe Colour' variable.](images/unsafe-colour-applied.png)
 
 
 --- /task ---
