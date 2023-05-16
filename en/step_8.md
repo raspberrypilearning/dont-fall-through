@@ -11,7 +11,7 @@ Pixel Art Reveal: https://pixel-art-reveal.rpfilt.repl.co
 
 --- no-print ---
 
-<iframe allowtransparency="true" width="710" height="500" src="https://pixel-art-reveal.rpfilt.repl.co" scrolling="no" frameborder="0"></iframe>
+<iframe allowtransparency="true" width="710" height="500" src="https://raspberrypilearning.github.io/unity-webgl/PixelArtReveal" scrolling="no" frameborder="0"></iframe>
 
 If you want to have more fun exploring Unity, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=unity){:target='_blank'} .
 
