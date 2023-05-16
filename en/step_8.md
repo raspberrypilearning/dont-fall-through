@@ -1,6 +1,6 @@
 ## What next?
 
-If you are following the [More Unity](https://projects.raspberrypi.org/en/raspberrypi/more-unity) path, you can move on to the [Pixel art reveal](https://projects.raspberrypi.org/en/projects/pixel-art-reveal){:target='_blank'} project. In this project, you will design some pixel art which the player reveals by rolling a ball over the tiles.
+If you are following the [More Unity](https://projects.raspberrypi.org/en/raspberrypi/more-unity) path, you can move on to the [Pixel Art Reveal](https://projects.raspberrypi.org/en/projects/pixel-art-reveal){:target='_blank'} project. In this project, you will design some pixel art which the player reveals by rolling a ball over the tiles.
 
 --- print-only ---
 
