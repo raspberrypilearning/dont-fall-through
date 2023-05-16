@@ -4,7 +4,7 @@ If you are following the [More Unity](https://projects.raspberrypi.org/en/raspbe
 
 --- print-only ---
 
-Pixel Art Reveal: https://pixel-art-reveal.rpfilt.repl.co
+Pixel Art Reveal: https://raspberrypilearning.github.io/unity-webgl/PixelArtReveal
 ![An image of the finished Pixel art reveal project showing coloured tiles and a ball with a patterned material. The floor is viewed from above with four centre tile colours revealed.](images/static-pink.png)
 
 --- /print-only ---
@@ -15,6 +15,6 @@ Pixel Art Reveal: https://pixel-art-reveal.rpfilt.repl.co
 
 If you want to have more fun exploring Unity, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=unity){:target='_blank'} .
 
-If you want to create your own tiled floor you could try out the [Blender - Create a 3D tiled floor](https://projects.raspberrypi.org/en/projects/blender-tiled-floor){:target='_blank'}  project. 
+If you want to create your own tiled floor you could try out the [Blender - Create a 3D tiled floor](https://projects.raspberrypi.org/en/projects/blender-tiled-floor){:target='_blank'} project. 
 
 --- /no-print ---
