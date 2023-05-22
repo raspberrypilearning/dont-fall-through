@@ -220,6 +220,10 @@ public class PlayerController : MonoBehaviour
 
 --- /code ---
 
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+The term <span style="color: #0faeb0">**respawn**</span> was first used in the context of video games in the iconic first-person shooter game <span style="color: #0faeb0">**Doom**</span> released in 1993, where defeated adversaries would reappear in the game world after a certain amount of time. The concept of respawning added a dynamic and challenging element to the gameplay, keeping players on their toes and providing a constant stream of action.
+</p>
+
 --- /task ---
 
 --- task ---
