@@ -10,7 +10,7 @@ In this step you will create the level for your game.
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Many popular games have used <span style="color: #0faeb0">**collapsing platforms**</span> to add an extra level of challenge. One classic game that introduced falling platforms is <span style="color: #0faeb0">**Super Mario Bros**</span>. Released in 1985, this iconic game had players navigating through levels filled with platforms that crumbled beneath Mario's feet. It set the stage for many future games to incorporate this thrilling mechanic including <span style="color: #0faeb0">**Sonic the Hedgehog**</span>, <span style="color: #0faeb0">**Donkey Kong Country**</span> and <span style="color: #0faeb0">**Crash Bandicoot**</span>. Have you played any games that use a collapsing platform mechanic?
+Pathfinding games that use traps challenge your skills and make you think how to navigate the twists and turns. Overcoming hazards rewards players with a sense of accomplishment. This is nothing new. Trench Football was a popular wooden marble rolling game created in 1915 that used holes in the corners of turns along the pathway.
 </p>
 
 ### Create a project with the starter package
