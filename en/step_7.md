@@ -9,7 +9,7 @@ You could:
 + Add sound effects for rolling over good and bad tiles. 
 + Try setting the gravity and mass of the tiles to different values. 
 
-<mark>Update the completed project</mark>
+<iframe allowtransparency="true" width="710" height="500" src="https://raspberrypilearning.github.io/unity-webgl/DFTUpgraded" scrolling = "no" frameborder="0"></iframe>
 
 --- collapse ---
 
@@ -17,8 +17,6 @@ You could:
 title: Completed project
 ---
 
-You can view the [completed project here](https://scratch.mit.edu/projects/485673032/){:target="_blank"}.
+You can download the basic and extended projects as packages along with the WebGL projects from the [zipped solutions directory](https://rpf.io/p/en/dont-fall-through-get){:target="_blank"}.
 
 --- /collapse ---
-
---- save ---

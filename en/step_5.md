@@ -12,6 +12,10 @@ Your browser does not support WebM video, try FireFox or Chrome
 </div>
 </div>
 
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+Many popular games have used <span style="color: #0faeb0">**collapsing platforms**</span> to add an extra level of challenge. One classic game that introduced falling platforms is <span style="color: #0faeb0">**Super Mario Bros**</span>. Released in 1985, this iconic game had players navigating through levels filled with platforms that crumbled beneath Mario's feet. It set the stage for many future games to incorporate this thrilling mechanic including <span style="color: #0faeb0">**Sonic the Hedgehog**</span>, <span style="color: #0faeb0">**Donkey Kong Country**</span> and <span style="color: #0faeb0">**Crash Bandicoot**</span>. Have you played any games that use a collapsing platform mechanic?
+</p>
+
 --- task ---
 
 Go to your 'TileController' script and add in the highlighted code. This will create an 'Unsafe' colour for your tiles during game play. 
@@ -22,12 +26,13 @@ language: cs
 filename: TileController.cs
 line_numbers: true
 line_number_start: 1
-line_highlights: 8, 23, 24, 25
+line_highlights: 9, 22-25
 ---
 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class TileController : MonoBehaviour
 {  
     public Material startColour;
@@ -43,11 +48,13 @@ public class TileController : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
-       if (gameObject.tag == "Safe"){
-           rend.sharedMaterial = safeColour;
-       }
-        else if (gameObject.tag == "Tile"){
-                rend.sharedMaterial = unsafeColour;
+        if (gameObject.tag == "Safe")
+        {
+            rend.sharedMaterial = safeColour;
+        } 
+        else if (gameObject.tag == "Tile")
+        {
+            rend.sharedMaterial = unsafeColour;
         }
     }
 }
@@ -66,7 +73,7 @@ In the Hierarchy window, select **all** the Floor cubes.
 
 **Choose:** An unsafe material. Drag your 'unsafe' material to the 'Unsafe Colour' variable in the Inspector.  
 
-![A screenshot showing the 'Unsafe Colour' applied to the 'UnSafe Colour' variable.](images/unsafe-colour-applied.png)
+![A screenshot showing the 'Unsafe Colour' applied to the 'Unsafe Colour' variable.](images/unsafe-colour-applied.png)
 
 
 --- /task ---
@@ -89,12 +96,13 @@ language: cs
 filename: TileController.cs
 line_numbers: true
 line_number_start: 1
-line_highlights: 
+line_highlights: 17, 18, 29, 30
 ---
 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class TileController : MonoBehaviour
 {  
     public Material startColour;
@@ -107,18 +115,21 @@ public class TileController : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
         rend.sharedMaterial = startColour;
-        this.GetComponent<Rigidbody>().useGravity = false;
-        this.GetComponent<Rigidbody>().isKinematic = true;
+        GetComponent<Rigidbody>().useGravity = false;
+        GetComponent<Rigidbody>().isKinematic = true;
     }
 
     void OnTriggerEnter(Collider other){
-       if (gameObject.tag == "Safe"){
-           rend.sharedMaterial = safeColour;
-       }
-        else if (gameObject.tag == "Tile"){
-                rend.sharedMaterial = unsafeColour;
-                this.GetComponent<Rigidbody>().useGravity = true;
-                this.GetComponent<Rigidbody>().isKinematic = false;
+        if (gameObject.tag == "Safe")
+        {
+            rend.sharedMaterial = safeColour;
+        }
+        else if (gameObject.tag == "Tile")
+        {
+            rend.sharedMaterial = unsafeColour;
+            GetComponent<Rigidbody>().useGravity = true;
+            GetComponent<Rigidbody>().isKinematic = false;
+        }
     }
 }
 
@@ -212,6 +223,10 @@ public class PlayerController : MonoBehaviour
 }
 
 --- /code ---
+
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+The term <span style="color: #0faeb0">**respawn**</span> was first used in the context of video games in the iconic first-person shooter game <span style="color: #0faeb0">**Doom**</span> released in 1993, where defeated adversaries would reappear in the game world after a certain amount of time. The concept of respawning added a dynamic and challenging element to the gameplay, keeping players on their toes and providing a constant stream of action.
+</p>
 
 --- /task ---
 

@@ -70,11 +70,12 @@ language: cs
 filename: TileController.cs
 line_numbers: true
 line_number_start: 1
-line_highlights: 8, 17-20
+line_highlights: 6, 17-23
 ---
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class TileController : MonoBehaviour
 {
     public Material startColour;
@@ -88,8 +89,10 @@ public class TileController : MonoBehaviour
         rend.sharedMaterial = startColour;
     }
 
-    void OnTriggerEnter(Collider other){
-       if (gameObject.tag == "Safe"){
+    void OnTriggerEnter(Collider other)
+    {
+        if (gameObject.tag == "Safe")
+        {
            rend.sharedMaterial = safeColour;
        	}
 	}

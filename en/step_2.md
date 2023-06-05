@@ -9,6 +9,10 @@ In this step you will create the level for your game.
 </div>
 </div>
 
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+Pathfinding games that use traps challenge your skills and make you think how to navigate the twists and turns. Overcoming hazards rewards players with a sense of accomplishment. This is nothing new. Trench Football was a popular wooden marble rolling game created in 1915 that used holes in the corners of turns along the pathway.
+</p>
+
 ### Create a project with the starter package
 
 --- task ---
@@ -76,7 +80,7 @@ Your scene should look like this:
 
 Go to the Inspector window. Click on the Transform component menu and select 'Reset'. This will centre your floor in the world:
 
-![The Inspector window with th Transform component drop down menu expanded and top menu item 'Reset' highlighted.](images/transform-reset.png)
+![The Inspector window with the Transform component drop down menu expanded and top menu item 'Reset' highlighted.](images/transform-reset.png)
 
 --- /task ---
 
@@ -115,7 +119,7 @@ In the Inspector, click on the tag dropdown and choose ‘Add Tag…’. Add a n
 
 ![A screenshot of the inspector with tag dropdown and 'Add Tag' sub menu item highlighted.](images/tag-dropdown.png)
 
-![A screenshot of the Tags and Layers window with The + icon highlightd and the word 'Title' typed in the 'New Tag Name' pr .](images/new-tag.png)
+![A screenshot of the Tags and Layers window with The + icon highlighted and the word 'Title' typed in the 'New Tag Name' pr .](images/new-tag.png)
 
 --- /task ---
 
@@ -127,7 +131,7 @@ In the Inspector, set the Tag to 'Tile'.
 
 --- /task ---
 
-This project will use physics so you need to set up the tiles. 
+This project will use physics, so you need to set up the tiles. 
 
 --- task ---
 

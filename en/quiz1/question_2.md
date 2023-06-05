@@ -20,8 +20,8 @@ line_highlights:
     {
         rend = GetComponent<Renderer>();
         rend.sharedMaterial = startColour;
-        this.GetComponent<Rigidbody>().useGravity = false;
-        this.GetComponent<Rigidbody>().isKinematic = true;
+        GetComponent<Rigidbody>().useGravity = false;
+        GetComponent<Rigidbody>().isKinematic = true;
     }
 
 --- /code ---
@@ -41,8 +41,8 @@ line_number_start: 1
 line_highlights: 
 ---
 
-  this.GetComponent<Rigidbody>().useGravity = false;
-  this.GetComponent<Rigidbody>().isKinematic = false;
+GetComponent<Rigidbody>().useGravity = false;
+GetComponent<Rigidbody>().isKinematic = false;
 
 --- /code ---
 
@@ -63,8 +63,8 @@ line_number_start: 1
 line_highlights: 
 ---
 
-  this.GetComponent<Rigidbody>().useGravity = false;
-  this.GetComponent<Rigidbody>().isKinematic = true;
+GetComponent<Rigidbody>().useGravity = false;
+GetComponent<Rigidbody>().isKinematic = true;
 
 --- /code ---
 
@@ -85,8 +85,8 @@ line_number_start: 1
 line_highlights: 
 ---
 
-  this.GetComponent<Rigidbody>().useGravity = true;
-  this.GetComponent<Rigidbody>().isKinematic = true;
+GetComponent<Rigidbody>().useGravity = true;
+GetComponent<Rigidbody>().isKinematic = true;
 
 --- /code ---
 
@@ -107,8 +107,8 @@ line_number_start: 1
 line_highlights: 
 ---
 
-  this.GetComponent<Rigidbody>().useGravity = true;
-  this.GetComponent<Rigidbody>().isKinematic = false;
+GetComponent<Rigidbody>().useGravity = true;
+GetComponent<Rigidbody>().isKinematic = false;
 
 --- /code ---
 

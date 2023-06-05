@@ -24,6 +24,8 @@ Create a sphere and name it 'Player1'.
 
 Set the Transform Scale to X=`0.8`, Y=`0.8`, Z=`0.8`. 
 
+**Tip:** You can use the **link** icon to change all the scale properties at once.
+
 Position the sphere on the left side of the start platform. Our example uses the Transform Position of: X=`-4.5`, Y=`1`, Z=`-10`.
 
 --- /task ---
@@ -38,14 +40,28 @@ Choose a material for the player and drag it on to the sphere in the Scene view.
 
 --- task ---
 
-Add the RigidBody component to the 'Player1' GameObject.
+Add a `Rigidbody` component to the 'Player1' GameObject.
 
 --- /task ---
 
 
 --- task ---
 
-Add a new script called 'PlayerController' to the 'Player1' GameObject:
+Add the `BallController` script to your 'Player1' GameObject. 
+
+--- collapse ---
+
+---
+title: I don't have a BallController script
+---
+
+Select the 'Player1' GameObject, in the Inspector click 'Add Component' and type 'BallController'. 
+
+Create and add this new script.
+
+Move the 'BallController' script into the 'Scripts' folder to organise your files. 
+
+Open the new script and type or copy and paste the following code. 
 
 --- code ---
 ---
@@ -60,54 +76,53 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class BallController : MonoBehaviour
 {
+    private Rigidbody rb;
     public Transform cameraTransform;
     public string forwardKey;
     public string leftKey;
     public string backwardKey;
     public string rightKey;
-    private Rigidbody rb;
     
     // Start is called before the first frame update
     void Start()
     {
-        rb = this.GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
         rb.transform.forward = cameraTransform.forward;
     }
 
-    // FixedUpdate is called once per fixed frame-rate frame
+    // Update is called once per frame
     void FixedUpdate()
     {
-        // Calculates cameraTransform.forward without the y value so the ball doesn't move up and down on the Y axis
         Vector3 forward = new Vector3(cameraTransform.forward.x, 0, cameraTransform.forward.z).normalized;
         Vector3 right = Quaternion.AngleAxis(90, Vector3.up) * forward;
         Vector3 left = -right;
         Vector3 backward = -forward;
 
-        if (Input.GetKey(forwardKey))
-        {
-            rb.AddForce(forward * 10f);
-        }
-
-        if (Input.GetKey(rightKey))
-        {
+        if (Input.GetKey(rightKey)){
             rb.AddForce(right * 5f);
         }
 
-        if (Input.GetKey(backwardKey))
-        {
-            rb.AddForce(backward * 2f);
+        if (Input.GetKey(leftKey)){
+            rb.AddForce(left * 5f);
         }
 
-        if (Input.GetKey(leftKey))
-        {
-            rb.AddForce(left * 5f);
+        if (Input.GetKey(forwardKey)){
+            rb.AddForce(forward * 10f);
+        }
+
+        if (Input.GetKey(backwardKey)){
+            rb.AddForce(backward * 2f);
         }
     }
 }
 
 --- /code ---
+
+Save your script and head back to the Unity editor.
+
+--- /collapse ---
 
 --- /task ---
 
@@ -157,7 +172,7 @@ Exit Play mode.
 
 --- task ---
 
-Select the Player2 GameObject and find the 'PlayerController' script in the inspector. 
+Select the Player2 GameObject and find the 'BallController' script in the inspector. 
 
 Change the Player2 keys to use the arrow keys: `up`, `left`, `down`, and `right`. 
 
