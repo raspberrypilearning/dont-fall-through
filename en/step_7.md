@@ -7,6 +7,7 @@ You could:
 + Use `Save As` to create a copy of your scene and create another level.
 + Choose different materials and particle effect settings.
 + Add sound effects for rolling over good and bad tiles. 
++ Change the camera angle
 + Try setting the gravity and mass of the tiles to different values. 
 
 <iframe allowtransparency="true" width="710" height="500" src="https://raspberrypilearning.github.io/unity-webgl/DFTUpgraded" scrolling = "no" frameborder="0"></iframe>
