@@ -26,7 +26,7 @@ language: cs
 filename: TileController.cs
 line_numbers: true
 line_number_start: 1
-line_highlights: 9, 22-25
+line_highlights: 9, 24-27
 ---
 
 using System.Collections;
@@ -157,7 +157,7 @@ Add code to the PlayerController script to respawn the ball at the start platfor
 --- code ---
 ---
 language: cs
-filename: PlayerController.cs
+filename: BallController.cs
 line_numbers: true
 line_number_start: 1
 line_highlights: 13, 20, 52-56
@@ -166,7 +166,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class BallController : MonoBehaviour
 {
     public Transform cameraTransform;
     public string forwardKey;

@@ -10,7 +10,11 @@ You could:
 + Change the camera angle.
 + Try setting the gravity and mass of the tiles to different values. 
 
+--- no-print ---
+
 <iframe allowtransparency="true" width="710" height="500" src="https://raspberrypilearning.github.io/unity-webgl/DFTUpgraded" scrolling = "no" frameborder="0"></iframe>
+
+--- /no-print ---
 
 --- collapse ---
 

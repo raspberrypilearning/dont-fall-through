@@ -70,7 +70,7 @@ language: cs
 filename: TileController.cs
 line_numbers: true
 line_number_start: 1
-line_highlights: 6, 17-23
+line_highlights: 8, 18-24
 ---
 using System.Collections;
 using System.Collections.Generic;
