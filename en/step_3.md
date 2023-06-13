@@ -2,12 +2,12 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step you will add two spheres with different materials for the two players and scripts to allow the players to be moved with different keys. When the first player reaches the end platform a particle effect will trigger.
+In this step, you will add two spheres with different materials for the two players, and scripts to allow the spheres to be moved with different keys. When the first player reaches the end platform, a particle effect will trigger.
 </div>
 <div>
 <video width="640" height="360" controls preload="none" poster="images/fireworks-win.png">
 <source src="images/fireworks-win.mp4" type="video/mp4">
-Your browser does not support WebM video, try FireFox or Chrome
+Your browser does not support WebM video, try FireFox or Chrome.
 </video>
 </div>
 </div>
@@ -26,13 +26,13 @@ Set the Transform Scale to X=`0.8`, Y=`0.8`, Z=`0.8`.
 
 **Tip:** You can use the **link** icon to change all the scale properties at once.
 
-Position the sphere on the left side of the start platform. Our example uses the Transform Position of: X=`-4.5`, Y=`1`, Z=`-10`.
+Position the sphere on the left side of the start platform. Our example uses the Transform position of: X=`-4.5`, Y=`1`, Z=`-10`.
 
 --- /task ---
 
 --- task ---
 
-Choose a material for the player and drag it on to the sphere in the Scene view. 
+**Choose** a material for the player and drag it on to the sphere in the Scene view. 
 
 ![The Scene view showing a multicoloured ball on the start platform.](images/player1.png)
 
@@ -55,13 +55,13 @@ Add the `BallController` script to your 'Player1' GameObject.
 title: I don't have a BallController script
 ---
 
-Select the 'Player1' GameObject, in the Inspector click 'Add Component' and type 'BallController'. 
+Select the 'Player1' GameObject. In the Inspector, click 'Add Component' and type 'BallController'. 
 
 Create and add this new script.
 
-Move the 'BallController' script into the 'Scripts' folder to organise your files. 
+Move the 'BallController' script into the Scripts folder to organise your files. 
 
-Open the new script and type or copy and paste the following code. 
+Open the new script and type or copy and paste the following code:
 
 --- code ---
 ---
@@ -128,13 +128,13 @@ Save your script and head back to the Unity editor.
 
 --- task ---
 
-Select the 'Player1' GameObject to view the 'Inspector' options.
+Select the 'Player1' GameObject to view the Inspector options.
 
-Drag the 'Main Camera' game object to the 'Camera Transform' variable in the 'Inspector'. 
+Drag the 'Main Camera' game object to the 'Camera Transform' variable in the Inspector. 
 
-Set the 'Forward Key', 'Left Key', 'Backward Key', and 'Right Key' to the lowercase letters that you want to use to control Player1. We used 'w', 'a', 's' and 'd'.
+Set the 'Forward Key', 'Left Key', 'Backward Key', and 'Right Key' to the lower case letters that you want to use to control Player1. We used 'w', 'a', 's' and 'd'.
 
-![The inspector for Player1 showing the PlayerController script with Camera Transform set to Main Camera and four key variables set to lowercase w, a, s and d.](images/player1-settings.png)
+![The inspector for Player1 showing the PlayerController script with Camera Transform set to Main Camera and four key variables set to lower case w, a, s and d.](images/player1-settings.png)
 
 **Tip:** The letters for the keys need to be in lower case. 
 
@@ -152,11 +152,11 @@ Exit play mode.
 
 --- task ---
 
-Duplicate Player1 to create a Player2 GameObject. 
+Duplicate Player1 to create a 'Player2' GameObject. 
 
-Move Player2 to a different position on the start platform, Position: (4.5, 1 -10).
+Move Player2 to a different position on the start platform, Position: `4.5`, `1`, `-10`.
 
-Drag a different material to Player2 in the scene view. 
+Drag a different material to Player2 in the Scene view. 
 
 ![The Scene view showing two multicoloured balls on the start platform.](images/player2.png)
 
@@ -166,17 +166,17 @@ Drag a different material to Player2 in the scene view.
 
 **Test:** Play your game and use the keys you chose to move Player1. Player2 will also move! That's not what we want. 
 
-Exit Play mode.
+Exit play mode.
 
 --- /task ---
 
 --- task ---
 
-Select the Player2 GameObject and find the 'BallController' script in the inspector. 
+Select the Player2 GameObject and find the 'BallController' script in the Inspector. 
 
 Change the Player2 keys to use the arrow keys: `up`, `left`, `down`, and `right`. 
 
-![The inspector for Player2 showing the PlayerController script with Camera Transform set to Main Camera and four key variables set to lowercase up, left, down and right.](images/player2-settings.png)
+![The Inspector for Player2 showing the PlayerController script with Camera Transform set to Main Camera and four key variables set to lower case up, left, down and right.](images/player2-settings.png)
 
 --- /task ---
 
@@ -184,7 +184,7 @@ Change the Player2 keys to use the arrow keys: `up`, `left`, `down`, and `right`
 
 **Test:** Play your game and use the arrow keys to move Player2.
 
-Exit Play mode.
+Exit play mode.
 
 --- /task ---
 
@@ -198,11 +198,11 @@ Add the 'Player' tag to Player1 and Player2.
 
 --- task ---
 
-In the 'Project' window, navigate to 'Assets -> Particle Systems'.
+In the Project window, navigate to **Assets > Particle Systems**.
 
 Drag the 'Fireworks' particle system onto the 'End Platform' GameObject in the Hierarchy window. 
 
-![A screenshot of the hierarchy window showing Fireworks as a child object of the End platform and the Scene view showing firework effects along the end platform.](images/fireworks-hierarchy.png)
+![A screenshot of the hierarchy window showing Fireworks as a nested object of the End platform and the Scene view showing firework effects along the end platform.](images/fireworks-hierarchy.png)
 
 --- /task ---
 
@@ -218,7 +218,7 @@ Add an AudioSource component.
 
 --- task ---
 
-In the 'Project' window, navigate to 'Assets -> Sounds'. 
+In the Project window, navigate to **Assets > Sounds**. 
 
 Find a tune that you like from the 'Effects' or 'ShortTunes' folders. 
 
@@ -230,13 +230,13 @@ With the 'End Platform' selected, drag your chosen sound onto the 'AudioClip' so
 
 --- task ---
 
-With the 'End Platform' GameObject selected. Go to the 'Inspector' window and add a new script component called 'FinishEffects'.
+With the 'End Platform' GameObject selected. Go to the Inspector window and add a new script component called 'FinishEffects'.
 
 --- /task ---
 
 --- task ---
 
-Open the 'FinishEffects' script and enter the following code to play a sound and a fireworks effect when a player reaches the end platform. 
+Open the 'FinishEffects' script and enter the following code to play a sound and a fireworks effect when a player reaches the end platform:
 
 --- code ---
 ---
@@ -286,7 +286,7 @@ public class FinishEffects : MonoBehaviour
 
 What happens if you roll the second ball to the end platform? 
 
-Exit Play mode.
+Exit play mode.
 
 --- /task ---
 
@@ -340,7 +340,7 @@ public class FinishEffects : MonoBehaviour
 
 What happens now when the second ball reaches the end platform? 
 
-Exit Play mode.
+Exit play mode.
 
 <video width="640" height="360" controls preload="none" poster="images/fireworks-win.png">
 <source src="images/fireworks-win.mp4" type="video/mp4">

@@ -48,7 +48,7 @@ GetComponent<Rigidbody>().isKinematic = false;
 
   --- feedback ---
 
-Not quite. You do need to set `useGravity` to `false` but there's something else you need to do. 
+Not quite. You do need to set `isKinematic` to `false` but there's something else you need to do. 
 
   --- /feedback ---
 

@@ -2,12 +2,12 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step you will make a player fall through the floor if they roll onto a tile that is not on the safe path. The player will reset back to the start so they can have another go and try to beat the other player. 
+In this step, you will make a player fall through the floor if they roll onto a tile that is not on the safe path. The player will reset back to the start so they can have another go and try to beat the other player. 
 </div>
 <div>
 <video width="640" height="360" controls preload="none" poster="images/unsafe-respawn.png">
 <source src="images/unsafe-respawn.mp4" type="video/mp4">
-Your browser does not support WebM video, try FireFox or Chrome
+Your browser does not support WebM video, try FireFox or Chrome.
 </video>
 </div>
 </div>
@@ -26,7 +26,7 @@ language: cs
 filename: TileController.cs
 line_numbers: true
 line_number_start: 1
-line_highlights: 9, 22-25
+line_highlights: 9, 24-27
 ---
 
 using System.Collections;
@@ -67,11 +67,11 @@ public class TileController : MonoBehaviour
 
 Save the script and return to the Unity Editor. 
 
-Navigate to the materials folder.
+Navigate to the Materials folder.
 
 In the Hierarchy window, select **all** the Floor cubes. 
 
-**Choose:** An unsafe material. Drag your 'unsafe' material to the 'Unsafe Colour' variable in the Inspector.  
+**Choose** an unsafe material. Drag your 'Unsafe' material to the 'Unsafe Colour' variable in the Inspector.  
 
 ![A screenshot showing the 'Unsafe Colour' applied to the 'Unsafe Colour' variable.](images/unsafe-colour-applied.png)
 
@@ -152,12 +152,12 @@ Your browser does not support WebM video, try FireFox or Chrome
 
 At the moment, the ball falls with the tile and you need to play your game again to reset it.
 
-Add code to the PlayerController script to respawn the ball at the start platform if it falls to a position of Y < `-10`:
+Add code to the 'PlayerController' script to respawn the ball at the start platform if it falls to a position of Y < `-10`:
 
 --- code ---
 ---
 language: cs
-filename: PlayerController.cs
+filename: BallController.cs
 line_numbers: true
 line_number_start: 1
 line_highlights: 13, 20, 52-56
@@ -166,7 +166,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class BallController : MonoBehaviour
 {
     public Transform cameraTransform;
     public string forwardKey;
@@ -225,7 +225,7 @@ public class PlayerController : MonoBehaviour
 --- /code ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The term <span style="color: #0faeb0">**respawn**</span> was first used in the context of video games in the iconic first-person shooter game <span style="color: #0faeb0">**Doom**</span> released in 1993, where defeated adversaries would reappear in the game world after a certain amount of time. The concept of respawning added a dynamic and challenging element to the gameplay, keeping players on their toes and providing a constant stream of action.
+The term <span style="color: #0faeb0">**respawn**</span> was first used in the context of video games in the iconic first-person shooter game <span style="color: #0faeb0">**Doom**</span>, released in 1993, where defeated adversaries would reappear in the game world after a certain amount of time. The concept of respawning added a dynamic and challenging element to the gameplay, keeping players on their toes and providing a constant stream of action.
 </p>
 
 --- /task ---
