@@ -3,12 +3,12 @@
 Change the style of your game or add more. 
 
 You could:
-+ Add a third or fourth player with different keys.
-+ Use `Save As` to create a copy of your scene and create another level.
-+ Choose different materials and particle effect settings.
-+ Add sound effects for rolling over good and bad tiles. 
-+ Change the camera angle.
-+ Try setting the gravity and mass of the tiles to different values. 
++ Add a third or fourth player with different keys
++ Use `Save As` to create a copy of your scene and create another level
++ Choose different materials and particle effect settings
++ Add sound effects for rolling over good and bad tiles
++ Change the camera angle
++ Try setting the gravity and mass of the tiles to different values
 
 --- no-print ---
 

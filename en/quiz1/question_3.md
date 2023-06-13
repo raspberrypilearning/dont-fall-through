@@ -56,7 +56,7 @@ That's not correct. Which colour will be used when the tag is set to 'Safe'?
 
   --- feedback ---
 
-  Correct. The tile would be set to GlossGreen after the ball rolled over it because it has the 'Safe' tag.
+  Correct. The tile would be set to 'GlossGreen' after the ball rolled over it, because it has the 'Safe' tag.
 
   --- /feedback ---
 
@@ -65,7 +65,7 @@ That's not correct. Which colour will be used when the tag is set to 'Safe'?
 
   --- feedback ---
   
-  That's not correct. 'GlossYellow' is the start colour, the colour will change when the ball rolls over it.
+  That's not correct. 'GlossYellow' is the start colour. The colour will change when the ball rolls over it.
 
   --- /feedback ---
 
