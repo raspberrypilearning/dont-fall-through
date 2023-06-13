@@ -3,6 +3,7 @@
 Change the style of your game or add more. 
 
 You could:
+
 + Add a third or fourth player with different keys
 + Use `Save As` to create a copy of your scene and create another level
 + Choose different materials and particle effect settings
