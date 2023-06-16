@@ -17,7 +17,7 @@ Control the movement of Player One using <kbd>WASD</kbd> (or <kbd>ZQSD</kbd>). P
 --- /no-print ---
 
 --- print-only ---
-![Complete project](images/showcase_static.png)
+![Output of the complete project showing a 3D grid with yellow and green coloured tiles. There are missing tiles falling through the grid floor](images/showcase_static.png)
 --- /print-only ---
 
 ### You will need
