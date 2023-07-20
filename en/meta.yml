@@ -1,4 +1,4 @@
-title: Don't Fall Through
+title: Don't fall through
 hero_image: images/banner.png
 description: Create a two-player game where the player must find the safe route to the end.
 meta_title: Don't Fall Through
@@ -10,8 +10,8 @@ keywords:
 - 3d
 - game
 version: 4
-listed: false
-copyedit: false
+listed: true
+copyedit: true
 last_tested: "2021-03-26"
 steps:
   - title: You will make
